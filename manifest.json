@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "No News Is Good News",
+  "version": "1.0.0",
+  "description": "Permanently disable the Facebook Newsfeed.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "js": [ "nnign.js" ],
+      "run_at": "document_start"
+    }
+  ]
+}
