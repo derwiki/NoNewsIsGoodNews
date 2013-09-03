@@ -1,7 +1,7 @@
 function poll() {
   var node = document.querySelector('body.home #contentArea');
   if (node) {
-    n.parentNode.removeChild(n);
+    node.parentNode.removeChild(node);
     // continue to check for the node, in case it AJAXes back in
     setTimeout(poll, 1000);
   } else {
